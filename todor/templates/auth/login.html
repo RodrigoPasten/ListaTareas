@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-sm-8">
+                <div class="card text-bg-primary mb-3">
+                    <div class="card-header">
+                        <h1 class="text-center">
+                            {% block title %} Iniciar sesión {% endblock %}
+                        </h1>
+                    </div>
+                    <div class="card-body">
+                        <form action="" method="post">
+                            <div class="form-group">
+                                <label for="username">Oh, el legendario 'nombre de usuario'. Supongo que ya tienes uno,
+                                    ¿verdad? Cuéntame, ¿cuál es ese nombre épico con el que te registraste? Solo tienes
+                                    que escribirlo en ese aburrido campo de 'nombre de usuario' y podrás volver a
+                                    sumergirte en este emocionante mundo de tareas y obligaciones. Aunque, sinceramente,
+                                    no sé por qué te molestarías en volver....</label>
+                                <input type="text" class="form-control" id="username" name="username" required minlength="4" maxlength="20">
+                            </div>
+                             <div class="form-group">
+                                <label for="password">Oh, la mítica contraseña... ¿Recuerdas la que elegiste?.
+                                    Ahora, aquí está este campo de 'contraseña' esperando pacientemente que ingreses esa
+                                    combinación de letras y números. Como si realmente importara en esta absurda odisea.
+                                    Pero, déjame adivinar... ¿es algo como '123456' o 'contraseña123'?
+                                    ¡Qué original! En fin, diviértete intentando recordar qué aberración creaste para
+                                    acceder a esto.</label>
+                                <input type="password" class="form-control" id="password" name="password" required>
+                            </div>
+                            <br>
+                            <div class="text-center">
+
+                                <input type="submit" class="btn btn-secondary" value="Iniciar Sesión">
+                            </div>
+                            <br>
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+{% endblock %}

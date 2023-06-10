@@ -1,0 +1,32 @@
+
+{% extends 'base.html' %}
+
+{% block title %} Inicio {% endblock %}
+
+{% block content %}
+
+<div class="container-sm text-center">
+    <h2 class="display-3">"Ah, hola... "</h2>
+    <p>Supongo que llegaste a esta cosa llamada 'lista de tareas'. ¿Por qué alguien
+        tendría una lista de tareas? En fin, bienvenido, supongo. Aquí tienes esta cosa en la que deberías apuntar
+        esas cosas que debes hacer y probablemente no hagas. ¡Diviértete! O algo así.</p>
+    <hr class="my-4">
+    <br><br>
+    <p>Iniciar sesión ó registrarse. Supongo que si realmente quieres perder tiempo en esta
+        cosa, al menos tienes opciones para elegir. Haz clic en el botón de inicio de sesión si quieres enfrentarte a
+        la realidad de tu existencia. O si te sientes audaz, prueba el botón de registro y sumérgete en el agotador
+        mundo de las formalidades. Elige sabiamente, aunque sinceramente, da igual, ¿no crees?</p> <br><br>
+
+    <div class="d-flex justify-content-center">
+        <a href="{{url_for('auth.login')}}" class="btn btn-primary mx-2">Inicia sesión... o no, como sea</a>
+        <a href="{{url_for('auth.register')}}" class="btn btn-secondary mx-2">¿Registrarse? Bueno, si no tienes nada mejor que hacer...</a>
+
+
+
+    </div>
+
+
+
+
+</div>
+{% endblock %}

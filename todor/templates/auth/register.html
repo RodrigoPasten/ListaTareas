@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-sm-8">
+                <div class="card text-bg-primary mb-3">
+                    <div class="card-header">
+                        <h1 class="text-center">
+                            {% block title %} Registrar usuario {% endblock %}
+                        </h1>
+                    </div>
+                    <div class="card-body">
+                        <form action="" method="post">
+                            <div class="form-group">
+                                <label for="username">Nombre de usuario... sí, necesitamos etiquetarte o algo así. Solo escribe algo ahí y sigue con tu sufrimiento.</label>
+                                <input type="text" class="form-control" id="username" name="username" required minlength="4" maxlength="20">
+                            </div>
+                             <div class="form-group">
+                                <label for="password">Contraseña... otro obstáculo más. Escríbela ahí y continúa sufriendo. ¡Diviértete recordándola!</label>
+                                <input type="password" class="form-control" id="password" name="password" required minlength="4" maxlength="20">
+                            </div>
+                            <br>
+                            <div class="text-center">
+
+                                <input type="submit" class="btn btn-secondary" value="Registrar Usuario">
+                            </div>
+                            <br>
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+{% endblock %}
